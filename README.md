@@ -9,7 +9,6 @@ This project demonstrates the setup and configuration of a Docker Compose enviro
 - **web_1_myweb/**: Contains the HTML content for the first web server.
 - **web_2_myresearch/**: Contains the HTML content for the second web server.
 - **web_3_ct519/**: Contains the HTML content for the third web server.
-  - **bootstrap-5.2.3/**: Bootstrap library for styling.
   - **ct519/**: Specific content for the CT519 section.
 - **docker-compose.yml**: Docker Compose configuration file for setting up the services.
 - **README.md**: Documentation for the project.
