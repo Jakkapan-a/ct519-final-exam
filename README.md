@@ -1,4 +1,4 @@
-# 🌟 CT519 Final Project
+# 🌟 CT519 Final-exam
 
 ## Author: Jakkapan Attala 66130030
 ## Project Overview:
