@@ -1,6 +1,6 @@
 # 🌟 CT519 Final Project
 
-## Author: Jakkapan Attala
+## Author: Jakkapan Attala 66130030
 ## Project Overview:
 This project demonstrates the setup and configuration of a Docker Compose environment with Nginx as a reverse proxy, distributing requests to multiple web servers using a round-robin method.
 
