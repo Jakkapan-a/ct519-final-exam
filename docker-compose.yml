@@ -1,0 +1,43 @@
+services:
+  reverse_proxy:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - frontend
+      - backend
+
+  web1:
+    image: nginx:alpine
+    volumes:
+      - ./web_1_myweb:/usr/share/nginx/html
+    networks:
+      - backend
+
+  web2:
+    image: nginx:alpine
+    volumes:
+      - ./web_2_myresearch:/usr/share/nginx/html
+    networks:
+      - backend
+
+  web3:
+    image: nginx:alpine
+    volumes:
+      - ./web_3_ct519:/usr/share/nginx/html
+    networks:
+      - backend
+  
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+
+
+    # depends_on:
+    #   - web1
+    #   - web2
+    #   - web3
