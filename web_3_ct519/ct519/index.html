@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bootstrap-5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles.css">
-    <title>Landing Page</title>
+    <title>CT519 Page</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
         <div class="container">
-            <a class="navbar-brand" href="./index.html">My Web 2</a>
+            <a class="navbar-brand" href="./index.html">My Web 3 - CT519</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link " aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="/myresearch">Research</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ct519">CT519</a>
+                        <a class="nav-link active" href="/ct519">CT519</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/Jakkapan-a/ct519-final-exam" target="_blank">Github</a>
@@ -46,20 +46,28 @@
     <section id="home section">
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-6 d-flex justify-content-center flex-column align-items-start p-5">
-                    <h1>Web 2</h1>
-                    <p>My name is Jakkapan Attala</p>
-                    <p>ID: 66130030</p>
-                    <p>I am a web developer and I am also studying at Dhurakij Pundit University.</p>
-                    <div class="row">
-                        <div class="col-12">
-                            <a href="/about" class="btn btn-primary">About</a>
-                            <a href="/myresearch" class="btn btn-primary">Research</a>
-                            <a href="/ct519" class="btn btn-primary">CT519</a>
-                            <a href="https://github.com/Jakkapan-a/ct519-final-exam" class="btn btn-primary"> Github</a>
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                    <h1>CT519</h1>
+                    <p>In this section, I will summarize the knowledge and experiences gained while working on the CT519 exam project.</p>
+                    <h2>Summary of Knowledge</h2>
+                    <p>The CT519 project involved designing a Docker and Docker Compose setup with Nginx as a reverse proxy, distributing requests in a round-robin fashion among multiple web servers. The main concepts learned include:</p>
+                    <ul>
+                        <li>Setting up Docker containers and Docker Compose</li>
+                        <li>Configuring Nginx as a reverse proxy</li>
+                        <li>Load balancing using Nginx</li>
+                        <li>Creating and linking web services with different content</li>
+                    </ul>
+                    <h2>Implementation Steps</h2>
+                    <p>The project implementation involved the following steps:</p>
+                    <ol>
+                        <li>Creating Docker Compose configuration for multiple web services</li>
+                        <li>Setting up Nginx configuration for reverse proxy and load balancing</li>
+                        <li>Developing HTML content for each web service</li>
+                        <li>Testing the setup to ensure correct load balancing and content delivery</li>
+                    </ol>
+                    <p>This project provided valuable hands-on experience with Docker, Nginx, and web server management.</p>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -74,7 +82,6 @@
         </div>
     </footer>
     <script src="/bootstrap-5.2.3/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

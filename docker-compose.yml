@@ -8,6 +8,10 @@ services:
     networks:
       - frontend
       - backend
+    depends_on:
+      - web1
+      - web2
+      - web3
 
   web1:
     image: nginx:alpine
@@ -20,15 +24,25 @@ services:
     image: nginx:alpine
     volumes:
       - ./web_2_myresearch:/usr/share/nginx/html
+      - ./web_1_myweb/bootstrap-5.2.3:/usr/share/nginx/html/bootstrap-5.2.3
+      - ./web_1_myweb/styles.css:/usr/share/nginx/html/styles.css
+      # - ./web_1_myweb/index.html:/usr/share/nginx/html/index.html
     networks:
       - backend
+    depends_on:
+      - web1
 
   web3:
     image: nginx:alpine
     volumes:
       - ./web_3_ct519:/usr/share/nginx/html
+      - ./web_1_myweb/bootstrap-5.2.3:/usr/share/nginx/html/bootstrap-5.2.3
+      - ./web_1_myweb/styles.css:/usr/share/nginx/html/styles.css
+      # - ./web_1_myweb/index.html:/usr/share/nginx/html/index.html
     networks:
       - backend
+    depends_on:
+      - web2
   
 networks:
   frontend:
@@ -37,7 +51,7 @@ networks:
     driver: bridge
 
 
-    # depends_on:
+
     #   - web1
     #   - web2
     #   - web3

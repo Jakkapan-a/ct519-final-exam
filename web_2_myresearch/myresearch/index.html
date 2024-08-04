@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.2.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="/bootstrap-5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>My Research Page</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
         <div class="container">
-            <a class="navbar-brand" href="/">My Web 1</a>
+            <a class="navbar-brand" href="./index.html">My Web 2 - My Research</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,13 +22,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/myresearch">Research</a>
+                        <a class="nav-link active" href="/myresearch">Research</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/ct519">CT519</a>
@@ -47,16 +47,23 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center flex-column align-items-start p-5">
-                    <h1>Web 1</h1>
-                    <p>My name is Jakkapan Attala</p>
-                    <p>ID: 66130030</p>
-                    <p>I am a web developer and I am also studying at Dhurakij Pundit University.</p>
-                    <div class="row">
-                        <div class="col-12">
-                            <a href="/about" class="btn btn-primary">About</a>
-                            <a href="/myresearch" class="btn btn-primary">Research</a>
-                            <a href="/ct519" class="btn btn-primary">CT519</a>
-                            <a href="https://github.com/Jakkapan-a/ct519-final-exam" class="btn btn-primary"> Github</a>
+                    <h1>Web 2 - My Research</h1>
+                    <!-- AI Image Processing -->
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Image Processing</h5>
+                            <p class="card-text">AI Image Processing is a research project that I am currently working on.
+                                The project is about using AI to process images and extract useful information from them. 
+                                The goal of the project is to develop a system that can automatically analyze images and provide insights to users.</p>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Machine Learning is another research project that I am working on. The project is about developing algorithms that can learn from data and make predictions. 
+                                The goal of the project is to develop machine learning models that can be used in various applications such as image recognition, natural language processing, and autonomous driving.</p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +80,8 @@
         </div>
         </div>
     </footer>
-    <script src="./bootstrap-5.2.3/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-5.2.3/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
